@@ -7,7 +7,7 @@
         {
             "type": "pwa-chrome",
             "request": "launch",
-            "name": "Launch Chrome against localhost",
+            "name": "Launch on Chrome",
             "url": "https://shvang42.github.io/AladdinsContracting/index.html/",
             "webRoot": "${workspaceFolder}"
         }
