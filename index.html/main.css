@@ -9,12 +9,16 @@
 
 body{
     font-family:montserrat;
+    background: #FFCC99;
 }
 
 nav{
     background: #FFCC99;
     height:80px;
     width:100%;
+    outline-width: medium;
+    outline-style: double;
+    outline-color: black;
 }
 
 label.logo{
