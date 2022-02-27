@@ -49,7 +49,14 @@ nav ul li a{
 img{
     width:45%;
     height:45%;
+    
 }
+
+.About{
+    text-align: center;
+
+}
+
 
 @media all and (max-width:600px)
 {
