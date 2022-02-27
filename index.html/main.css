@@ -62,13 +62,6 @@ nav ul li a:hover{
     color: #ff5ea2;
 }
 
-.row{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 100px 0;
-}
-
 .image{
     padding-left: 4%;
     width:45%;
@@ -123,10 +116,6 @@ nav ul li a:hover{
        height:45%;
        height:700; 
        width:380;
-   }
-   .row{
-       flex-direction: column-reverse;
-       margin: 50px 0;
    }
 
 }
