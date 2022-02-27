@@ -31,11 +31,13 @@ label.logo{
     display: flex;
     align-items: center;
     padding-right: 4%;
+    background:#FFFCCE;
 }
 
 nav{
     flex: 1;
     text-align: right;
+    background:#FFFCCE;
     /*background: #FFFCCE;
     outline-width: medium;
     outline-style: double;
