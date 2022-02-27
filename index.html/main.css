@@ -32,6 +32,7 @@ label.logo{
     align-items: center;
     padding-right: 4%;
     background:#FFFCCE;
+    outline-style:solid;
 }
 
 nav{
