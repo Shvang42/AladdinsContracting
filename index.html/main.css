@@ -83,7 +83,7 @@ nav ul li a:hover{
     label.logo{
         color:black;
         font-size: 25px;
-        line-height:40px;
+        line-height:10px;
         padding: 0 10px;
         font-weight:bold;
     }
