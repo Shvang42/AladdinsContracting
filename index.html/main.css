@@ -9,11 +9,11 @@
 
 body{
     font-family:montserrat;
-    background: #FFCC99;
+    background: #bfab93;
 }
 
 nav{
-    background: #FFCC99;
+    background: #FFFCCE;
     height:80px;
     width:100%;
     outline-width: medium;
@@ -22,7 +22,7 @@ nav{
 }
 
 label.logo{
-    color:white;
+    color:black;
     font-size: 35px;
     line-height:80px;
     padding: 0 100px;
@@ -42,7 +42,7 @@ nav ul li {
 }
 
 nav ul li a{
-    color:white;
+    color:black;
     
 }
 
