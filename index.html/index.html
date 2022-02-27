@@ -15,40 +15,50 @@
     </head>
         <body>
             <div class="wrapper">
+                <div class="navbar">
+                    <label class="logo">Aladdin's Finish Carpentry LLC</label>
                 <nav>
-                        <label class="logo">Aladdin's Finish Carpentry LLC</label>
-                        <ul>
-                            <li><a href="#">About Us </a></li>
-                            <li><a href="#">Services </a></li>
+                        <ul id="menuList">
+                            <li><a href="">About Us </a></li>
+                            <li><a href="">Services </a></li>   
                         </ul>
                 </nav>
-        
-                <section class="About">
-                    <h1> About Us </h1>
-
-                    <div class="content">
-                        <div class="image">
-                            <img src="david-EO_KlX-A6SY-unsplash.jpg" style="float: left" alt="Construction worker putting down flooring"  height="1100" width="700"/>
+                <img src="menu.png" class="menu-icon"
+                 onclick="togglemenu()">
+                </div>
+                <div class="row">
+                    <img src="david-EO_KlX-A6SY-unsplash.jpg" style="float: left" alt="Construction worker putting down flooring" class="image"/>
+                    <section class="About">
+                        <h1> About Us </h1>
+                        <div class="content">
+                            <div class="info">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                                    quis nostrud exercitation ullamco laboris nisi 
+                                    ut aliquip ex ea commodo consequat. Duis aute irure dolor i
+                                    n reprehenderit in voluptate velit 
+                                    esse cillum dolore eu fugiat nulla pariatur. 
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est 
+                                    laborum.
+                                </p>
+                            </div>
+                             
                         </div>
-                        
-                        <div class="info">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                                quis nostrud exercitation ullamco laboris nisi 
-                                ut aliquip ex ea commodo consequat. Duis aute irure dolor i
-                                n reprehenderit in voluptate velit 
-                                esse cillum dolore eu fugiat nulla pariatur. 
-                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est 
-                                laborum.
-                            </p>
-                        </div>
-                         
-                    </div>
-
-                </section>
-
+    
+                    </section>
+                </div>
             </div>
-
+            <script>
+                var menuList = document.getElementById("menuList");
+                menuList.style.maxHeight = "0px";
+                function togglemenu(){
+                    if(menuList.style.maxHeight == "0px"){
+                        menuList.style.maxHeight = "130px";
+                    } else{
+                        menuList.style.maxHeight = "0px";
+                    }
+                }
+            </script>
         </body>
 </html>
