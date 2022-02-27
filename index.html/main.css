@@ -38,11 +38,6 @@ nav{
     flex: 1;
     text-align: right;
     background:#FFFCCE;
-    /*background: #FFFCCE;
-    outline-width: medium;
-    outline-style: double;
-    outline-color: black;
-    */
     height:80px;
     
 }
@@ -72,12 +67,20 @@ nav ul li a:hover{
     width:700;
 }
 
+.img{
+    margin-right:auto;
+}
+
 .About{
     text-align: center;
+    font-size: 40px;
 }
 
 .content{
-    padding-left: 4%;
+    margin-top:150px;
+    padding-left: 60%;
+    padding-right:15%;
+    font-size: 25px;
 }
 
 @media only screen and (max-width:600px)
@@ -97,7 +100,6 @@ nav ul li a:hover{
     }
     nav ul{
         width: 100%;
-        background: #fce3bd;
         position: absolute;
         top: 75px;
         right: 0;
