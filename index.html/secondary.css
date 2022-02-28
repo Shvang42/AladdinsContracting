@@ -17,7 +17,7 @@ label.logo{
     font-size: 35px;
     line-height:80px;
     font-weight:bold;
-    margin-left:400px;
+    margin-left:377px;
 }
 
 .menu-icon{
@@ -62,6 +62,7 @@ nav ul li a{
     color:white;
     text-decoration: none;
     font-size: 20px;
+
 }
 
 nav ul li a:hover{
@@ -85,7 +86,7 @@ nav ul li a:hover{
 }
 
 .content{
-    margin-top:150px;
+    margin-top:110px;
     padding-left: 60%;
     padding-right:15%;
     font-size: 25px;
