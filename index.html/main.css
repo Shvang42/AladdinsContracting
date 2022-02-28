@@ -8,16 +8,16 @@
 
 
 body{
-    font-family:montserrat;
-    background: #fce3bd;
+    font-family: sans-serif;
+    background: linear-gradient(to left, #d0dde0, #bec6d8);
 }
 
 label.logo{
     color:black;
     font-size: 35px;
     line-height:80px;
-    padding: 0 100px;
     font-weight:bold;
+    margin-left:400px;
 }
 
 .menu-icon{
@@ -32,26 +32,34 @@ label.logo{
     align-items: center;
     padding-right: 4%;
     background:#FFFCCE;
-    outline-style:solid;
+}
+
+.navbar2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-right: 4%;
+    background:black;
 }
 
 nav{
     flex: 1;
-    text-align: right;
-    background:#FFFCCE;
-    height:80px;
+    text-align: center;
+    background:black;
+    height:70px;
     
 }
 
 nav ul li {
     list-style: none;
     display:inline-block;
-    margin-right: 30px;
+    margin-right: 60px;
+    margin-left:60px;
     line-height:80px;
 }
 
 nav ul li a{
-    color:black;
+    color:white;
     text-decoration: none;
     font-size: 20px;
 }
@@ -86,10 +94,10 @@ nav ul li a:hover{
 @media only screen and (max-width:600px)
 {
     .navbar{
-    width: 45%;
-    display: flex;
-    align-items: center;
-    padding-right: 2%;
+        width: 45%;
+        display: flex;
+        align-items: center;
+        padding-right: 2%;
     }
     label.logo{
         color:black;
@@ -106,9 +114,9 @@ nav ul li a:hover{
         z-index: 2;
     }
    nav ul li{
-    display: block;
-    margin-top: 10px;
-    margin-bottom: 10px;
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
    }
    nav ul li a{
        color: black;
