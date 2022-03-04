@@ -92,7 +92,7 @@ nav ul li a:hover{
     font-size: 25px;
 }
 
-@media only screen and (max-width:600px)
+@media only screen and (max-width:650px)
 {
     .navbar{
         width: 100%;
@@ -125,9 +125,10 @@ nav ul li a:hover{
     }
 
    .menu-icon{
+       color:#ff5ea2;
        display: block;
    }
-   
+
    #menuList{
        overflow: hidden;
        transition: 0.5s;
@@ -135,5 +136,9 @@ nav ul li a:hover{
 
    .image{
     visibility: hidden;
+    }
+
+    .img{
+        visibility: hidden;
     }
 }
