@@ -127,9 +127,13 @@ nav ul li a:hover{
    .menu-icon{
        display: block;
    }
+   
    #menuList{
        overflow: hidden;
        transition: 0.5s;
    }
 
+   .image{
+    visibility: hidden;
+    }
 }
