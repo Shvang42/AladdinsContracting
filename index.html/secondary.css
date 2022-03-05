@@ -92,7 +92,7 @@ nav ul li a:hover{
     font-size: 25px;
 }
 
-@media only screen and (max-width:450px)
+@media only screen and (max-width:550px)
 {
     .navbar{
         width: 100%;
@@ -132,7 +132,7 @@ nav ul li a:hover{
     flex: 1;
     text-align: center;
     background:black;
-    height:40px;
+    height:20px;
     
     }
 
