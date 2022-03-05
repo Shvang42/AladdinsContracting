@@ -92,12 +92,12 @@ nav ul li a:hover{
     font-size: 25px;
 }
 
-@media only screen and (max-width:475px)
+@media only screen and (max-width:450px)
 {
     .navbar{
         width: 100%;
         display: block;
-        align-items: center;
+        align-items: left;
         background:#FFFCCE;
     }
     
@@ -120,6 +120,7 @@ nav ul li a:hover{
         font-size: 25px;
         line-height: 20px;
         align-items: right;
+        overflow: hidden;
     }
 
    .menu-icon{
