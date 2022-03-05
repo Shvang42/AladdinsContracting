@@ -95,7 +95,7 @@ nav ul li a:hover{
 {
     .navbar{
         width: 100%;
-        display: block;
+        display: inline-block;
         align-items: left;
         background:#FFFCCE;
     }
