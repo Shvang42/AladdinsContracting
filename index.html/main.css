@@ -117,7 +117,7 @@ nav ul li a:hover{
     label.logo{
         color:black;
         font-size: 20px;
-        line-height: 20px;
+        line-height: 10px;
         align-items: left;
         overflow: hidden;
     }
