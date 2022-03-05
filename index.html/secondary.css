@@ -92,7 +92,7 @@ nav ul li a:hover{
     font-size: 25px;
 }
 
-@media only screen and (max-width:425px)
+@media only screen and (max-width:450px)
 {
     .navbar{
         width: 100%;
@@ -117,9 +117,9 @@ nav ul li a:hover{
 
     label.logo{
         color:black;
-        font-size: 25px;
+        font-size: 20px;
         line-height: 20px;
-        align-items: right;
+        align-items: left;
         overflow: hidden;
     }
 
