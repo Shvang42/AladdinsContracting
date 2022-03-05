@@ -97,8 +97,7 @@ nav ul li a:hover{
     .navbar{
         width: 100%;
         display: flex;
-        align-items: center;
-        padding-right: 4%;
+        align-items: left;
         background:#FFFCCE;
     }
     
