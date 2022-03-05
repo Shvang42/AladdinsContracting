@@ -128,7 +128,16 @@ nav ul li a:hover{
        display: block;
    }
 
+   nav{
+    flex: 1;
+    text-align: center;
+    background:black;
+    height:40px;
+    
+    }
+
    #menuList{
+       background-color: black;
        overflow: hidden;
        transition: 0.5s;
    }
