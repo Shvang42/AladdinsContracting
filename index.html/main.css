@@ -91,7 +91,7 @@ nav ul li a:hover{
     font-size: 25px;
 }
 
-@media only screen and (max-width:550px)
+@media only screen and (max-width:600px)
 {
     .navbar{
         width: 100%;
