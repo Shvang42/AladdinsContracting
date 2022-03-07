@@ -103,8 +103,8 @@ nav ul li a:hover{
     nav ul li {
         list-style: none;
         display:inline-block;
-        margin-right:10px;
-        margin-left:10px;
+        margin-right:15px;
+        margin-left:15px;
         line-height:20px;
     }
     
@@ -116,8 +116,8 @@ nav ul li a:hover{
 
     label.logo{
         color:black;
-        font-size: 18px;
-        line-height: 10px;
+        font-size: 16px;
+        line-height: 8px;
         align-items: left;
         overflow: hidden;
     }
