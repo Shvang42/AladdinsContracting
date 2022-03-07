@@ -154,7 +154,9 @@ nav ul li a:hover{
         text-align: center;
         font-size: 20px;
     }
-    .service{
+
+    .Service{
+        text-align: center;
         font-size: 20px;
     }
 }
