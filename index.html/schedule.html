@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta name="keywords" description="contracting,flooring,construction">
+        <meta name="description" content=" Contracting company "> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>
+            Aladdin's Finish Carpentry LLC
+        </title>
+        <link rel="stylesheet" href="appointment.css">
+    
+
+
+    </head>
+        <body>
+            <div class="wrapper">
+                <div class="navbar">
+                    <label class="logo">Aladdin's Finish Carpentry LLC</label>
+                </div>
+                <div class="navbar2">
+                    <nav>
+                        <ul id="menuList">
+                            <li><a href="index.html">About Us </a></li>
+                            <li><a href="services.html">Services </a></li>  
+                            <li><a href=" ">Schedule</a></li>    
+                        </ul>
+                    </nav>
+                    <img src="white_hamburger-2.psd" class="menu-icon"
+                    onclick="togglemenu()">
+                </div>
+                <div class="row">
+                    <div class="img">
+                        <img src="wood.jpg" style="float: left" alt="Construction worker putting down flooring" class="image"/>
+                    </div>
+                    
+                    <section class="About">
+                        <h1> Schedule</h1>
+                        <div class="content">
+                            <div class="info">
+                                <form onsubmit="sendEmail(); reset(); return false;">
+                                    <h3> Schedule an appointment!</h3>
+                                    <input type="text"  id="name" placeholder="Your Name" required>
+                                    <input type="phonenumber"  id="phone" placeholder="Your Phone Number" required>
+                                    <input type="email"  id="email" placeholder="Your Email" required>
+                                    <button type="submit">Submit</button>
+                                </form>
+                            </div>
+                            
+                        </div>
+    
+                    </section>
+                </div>
+            </div>
+            <script>
+                var menuList = document.getElementById("menuList");
+                menuList.style.maxHeight = "0px";
+                function togglemenu(){
+                    if(menuList.style.maxHeight == "0px"){
+                        menuList.style.maxHeight = "130px";
+                    } else{
+                        menuList.style.maxHeight = "0px";
+                    }
+                }
+            </script>
+
+            <script src="https://smtpjs.com/v3/smtp.js">
+            </script>
+
+            <script>
+                function sendEmail(){
+                    Email.send({
+                    Host : "smtp.gmail.com",
+                    Username : "abdullahkashem29@gmail.com",
+                    Password : "abk39019",
+                    To : 'osmanelias90@gmail.com',
+                    From : document.getElementById("email").value,
+                    Subject : " Appointment Inquiry",
+                    Body : "Name: "+document.getElementById("name").value 
+                    + "<br> Email:" +document.getElementById("email").value
+                    + "<br> Phone Number:" +document.getElementById("phone").value
+                }).then(
+                    message => alert(message)
+                );
+            }
+                 
+            </script>
+        </body>
+</html>
