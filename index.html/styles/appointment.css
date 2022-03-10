@@ -129,72 +129,64 @@ form button{
     margin:20px auto 0;
     border-radius:30px;
 }
+.afc{
+    display: none;
+}
 
 
 @media only screen and (max-width:600px)
 {
-    .navbar{
-        width: 100%;
-        display: inline-block;
-        align-items: left;
-        background: linear-gradient(to left, #d0dde0, #bec6d8);
+    body{
+        margin:1.5em;
+        font-size: 1px;
     }
-    
+ 
+    .img{
+       position:absolute;
+       position:0;
+       display:none;
+       margin-top:600px;
+    }
+ 
     nav ul li {
-        list-style: none;
-        display:inline-block;
-        margin-right:15px;
-        margin-left:15px;
-        line-height:20px;
-    }
+     list-style: none;
+     display:inline-block;
+     margin-right: 25px;
+     margin-left:25px;
+     line-height:60px;
+ }
+ .navbar{
+     width: 100%;
+     display: flex;
+     background:#FFFCCE;
+ }
+ label.logo{
+     color:black;
+     font-size: 18px;
+     line-height:80px;
+     font-weight:bold;
+     margin-left:100px;
+ }
+ 
+ h1{
+     font-size: 40px;
+     line-height: 100px;
+ }
+ 
+ .content{
+     margin-top:10px;
+     padding-left: 10%;
+     padding-right:15%;
+     font-size: 23px;
+ }
+ .afc{
+     display:flex;
+     margin-top: 80px;
+     height:45%;
+     width:100%;
+     margin-left: 130px;
     
-    nav ul li a{
-        color:black;
-        text-decoration: none;
-        font-size: 10px;
-    }
-
-    label.logo{
-        color:black;
-        font-size: 16px;
-        line-height: 8px;
-        align-items: left;
-        overflow: hidden;
-        visibility: hidden;
-    }
-
-   .menu-icon{
-       color:#ff5ea2;
-       display: block;
-   }
-
-   nav{
-    flex: 1;
-    text-align: center;
-    background:black;
-    height:20px;
-    
-    }
-
-   #menuList{
-       background-color: black;
-       overflow: hidden;
-       transition: 0.5s;
-   }
-
-   .image{
-       visibility: hidden;
-   }
-
-   .img{
-       visibility: hidden;
-   }
-
-   .About{
-    text-align: center;
-    font-size: 20px;
-    }
-
+ }
  
 
 }
