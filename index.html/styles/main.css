@@ -150,5 +150,47 @@ h1{
     margin-left: 110px;
    
 }
-   
+
+
+}
+
+
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+
+    body{
+        margin:1.5em;
+        font-size: 1px;
+    }
+    .img{
+        position:absolute;
+        position:0;
+        display:none;
+        margin-top:600px;
+     }
+
+     label.logo{
+        color:black;
+        font-size: 30px;
+        line-height:80px;
+        font-weight:bold;
+        display: flex;
+        margin-left: 140px;
+    }
+    .content{
+        margin-top:70px;
+        padding-left: 10%;
+        padding-right:15%;
+        font-size: 23px;
+    }
+    .afc{
+        display:flex;
+        margin-top: 80px;
+        height:10%;
+        width:90%;
+        margin-left: 220px;
+       
+    }
 }
