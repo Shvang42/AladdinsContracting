@@ -18,6 +18,7 @@ label.logo{
     line-height:80px;
     font-weight:bold;
     margin-left:377px;
+    display: none;
 }
 
 .menu-icon{
@@ -94,9 +95,21 @@ nav ul li a:hover{
 .afc{
     display: none;
 }
+.sign{
+    width:45%;
+    height:45%;
+    margin-left: auto;
+    margin-right:170px
+
+}
+
+
 
 @media only screen and (max-width:600px)
 {
+    .sign{
+        display: none;
+    }
 
     body{
         margin:1.5em;
@@ -127,6 +140,7 @@ nav ul li a:hover{
      font-size: 18px;
      line-height:80px;
      font-weight:bold;
+     display: flex;
      margin-left:80px;
  }
  
@@ -157,6 +171,9 @@ and (min-device-width: 768px)
 and (max-device-width: 1024px) 
 and (-webkit-min-device-pixel-ratio: 1) {
 
+    .sign{
+        display: none;
+    }
     body{
         margin:1.5em;
         font-size: 1px;
