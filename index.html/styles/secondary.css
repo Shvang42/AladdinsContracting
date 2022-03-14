@@ -124,12 +124,15 @@ nav ul li a:hover{
     }
  
     nav ul li {
-     list-style: none;
-     display:inline-block;
-     margin-right: 25px;
-     margin-left:25px;
-     line-height:60px;
- }
+        list-style: none;
+        display:inline-block;
+        margin-right: 15px;
+        margin-left:15px;
+        line-height:60px;
+    }
+    nav ul li a {
+        font-size: 14px;
+    }
  .navbar{
      width: 100%;
      display: flex;
@@ -198,6 +201,13 @@ and (-webkit-min-device-pixel-ratio: 1) {
         padding-left: 10%;
         padding-right:15%;
         font-size: 23px;
+    }
+    nav ul li {
+        list-style: none;
+        display:inline-block;
+        margin-right: 15px;
+        margin-left:15px;
+        line-height:60px;
     }
     .afc{
         display:flex;
