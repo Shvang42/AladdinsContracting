@@ -144,7 +144,10 @@ nav ul li a:hover{
     margin-right:170px
 
 }
-
+.About{
+    text-align: center;
+    font-size: 30px;
+}
 
 @media only screen and (max-width:600px)
 {
