@@ -9,7 +9,10 @@
 
 body{
     font-family: sans-serif;
-    background: linear-gradient(to left, #d0dde0, #bec6d8);
+    /*
+    background:linear-gradient(to left, #d0dde0, #bec6d8);
+    */
+    background: linear-gradient(to left, #d3e4e8, #99a9cc);
 }
 
 label.logo{
@@ -121,20 +124,28 @@ nav ul li a:hover{
       margin-top:600px;
    }
 
+   nav ul{
+       width: 100%;
+       position: absolute;
+       top: 75px;
+       right: 0;
+       z-index: 2;
+   }
+
    nav ul li {
-    list-style: none;
-    display:inline-block;
+    display: block;
     margin-right: 15px;
     margin-left:15px;
-    line-height:60px;
 }
 nav ul li a {
     font-size: 14px;
+    color: black;
 }
 .navbar{
     width: 100%;
     display: flex;
     background:#FFFCCE;
+    border: solid;
 }
 label.logo{
     color:black;
@@ -167,6 +178,18 @@ h1{
    
 }
 
+.menu-icon{
+    display: flex;
+    background: #d3e4e8;
+}
+
+nav{
+    background: linear-gradient(to left, #d3e4e8, #99a9cc);
+}
+
+.navbar2{
+    background: linear-gradient(to left, #d3e4e8, #99a9cc);
+}
 
 }
 
