@@ -254,6 +254,7 @@ nav{
 
 .navbar2{
     background: linear-gradient(to left, #d3e4e8, #99a9cc);
+    display: none;
 }
 
 
