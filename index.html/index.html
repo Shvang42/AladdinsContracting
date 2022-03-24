@@ -20,10 +20,12 @@
                     <div class="sign">
                         <img src="pictures/logo.png" style="float:left" height="140px" width="140px">
                     </div>
+
+                    <img src="pictures/menu.png" class="menu-icon" onclick="mFunction()">
                 </div>
-                <div class="navbar2">
-                    <nav>
-                        <ul id="menuList">
+                <div class="navbar2" id="menuList">
+                    <nav class="links">
+                        <ul >
                             <li><a href="">About Us </a></li>
                             <li><a href="services.html">Services </a></li> 
                             <li><a href="schedule.html">Schedule </a></li> 
@@ -31,8 +33,6 @@
 
                         </ul>
                     </nav>
-                    <img src="pictures/menu.png" class="menu-icon"
-                    onclick="togglemenu()">
                 </div>
                 <div class="row">
                     <div class="img">
@@ -64,16 +64,18 @@
                     </section>
                 </div>
             </div>
-            <script>
-                var menuList = document.getElementById("menuList");
-                menuList.style.maxHeight = "0px";
-                function togglemenu(){
-                    if(menuList.style.maxHeight == "0px"){
-                        menuList.style.maxHeight = "130px";
-                    } else{
-                        menuList.style.maxHeight = "0px";
-                    }
-                }
-            </script>
+          <script>
+              function mFunction(){
+                  var x=document.getElementById("menuList");
+
+                  if(x.style.display==="block")
+                  {
+                      x.style.display="none";
+                  }
+                  else{
+                      x.style.display="block";
+                  }
+              }
+          </script>
         </body>
 </html>

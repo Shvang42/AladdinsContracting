@@ -9,7 +9,7 @@
 
 body{
     font-family: sans-serif;
-    background: linear-gradient(to left, #d0dde0, #bec6d8);
+    background: linear-gradient(to left, #d3e4e8, #99a9cc);
 }
 .img-gallery{
     width: 80%;
@@ -173,28 +173,47 @@ nav ul li a:hover{
       margin-top:600px;
    }
 
-   nav ul li {
-    list-style: none;
-    display:inline-block;
-    margin-right: 15px;
-    margin-left:15px;
-    line-height:60px;
+   .links {
+    color: black;
+    text-decoration: none;
+    font-size: 10px;
+    display: block;
+    background-color:black;
+  }
+  
+  nav ul{
+      width: 100%;
+      background: black;
+      position: absolute;
+      top:75px;
+      right:0;
+      z-index:2;
+  }
+
+  nav ul li{
+    display: block;
 }
-nav ul li a {
-    font-size: 14px;
-}
+
+   nav ul li a{
+    color:white;
+    font-size: 15px;
+   }
+
+  
 .navbar{
     width: 100%;
     display: flex;
     background:#FFFCCE;
+    border: solid;
 }
+
 label.logo{
     color:black;
     font-size: 18px;
     line-height:80px;
     font-weight:bold;
     display: flex;
-    margin-left: 80px;
+    margin-left: 60px;
 }
 
 
@@ -205,7 +224,7 @@ h1{
 }
 
 .content{
-    margin-top:10px;
+    margin-bottom: 10px;
     padding-left: 10%;
     padding-right:15%;
     font-size: 23px;
@@ -219,6 +238,23 @@ h1{
    
 }
 
+.menu-icon{
+    display: block;
+    margin-left: 30px;
+}
+
+.img-gallery{
+    margin-top: 30px;
+}
+
+
+nav{
+    background: linear-gradient(to left, #d3e4e8, #99a9cc);
+}
+
+.navbar2{
+    background: linear-gradient(to left, #d3e4e8, #99a9cc);
+}
 
 
 }

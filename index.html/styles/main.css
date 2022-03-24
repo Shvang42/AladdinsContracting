@@ -124,23 +124,34 @@ nav ul li a:hover{
       margin-top:600px;
    }
 
-   nav ul{
-       width: 100%;
-       position: absolute;
-       top: 75px;
-       right: 0;
-       z-index: 2;
+   .links {
+    color: black;
+    text-decoration: none;
+    font-size: 10px;
+    display: block;
+    background-color:black;
+  }
+  
+  nav ul{
+      width: 100%;
+      background: black;
+      position: absolute;
+      top:75px;
+      right:0;
+      z-index:2;
+  }
+
+  nav ul li{
+    display: block;
+}
+
+   nav ul li a{
+    color:white;
+    font-size: 15px;
    }
 
-   nav ul li {
-    display: block;
-    margin-right: 15px;
-    margin-left:15px;
-}
-nav ul li a {
-    font-size: 14px;
-    color: black;
-}
+  
+
 .navbar{
     width: 100%;
     display: flex;
@@ -153,7 +164,7 @@ label.logo{
     line-height:80px;
     font-weight:bold;
     display: flex;
-    margin-left: 80px;
+    margin-left: 60px;
 }
 
 
@@ -178,10 +189,12 @@ h1{
    
 }
 
+
 .menu-icon{
-    display: flex;
-    background: #d3e4e8;
+    display: block;
+    margin-left: 30px;
 }
+
 
 nav{
     background: linear-gradient(to left, #d3e4e8, #99a9cc);
