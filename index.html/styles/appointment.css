@@ -344,6 +344,7 @@ form button{
     display: none;
 }
 
+/*============Beginning of Body ==============*/
 .first-btn{
     padding: 15px;
     border-radius: 5px;
@@ -420,6 +421,8 @@ and (-webkit-min-device-pixel-ratio: 1) {
         margin-left: 220px;
        
     }
+
+    /*============Beginning of Body ==============*/
     .first-btn{
         padding: 15px;
         border-radius: 5px;

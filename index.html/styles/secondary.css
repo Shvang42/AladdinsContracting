@@ -105,7 +105,7 @@ nav ul li a:hover{
 
 /*============Beginning of Banner ==============*/
 .background-image{
-    background: url(/index.html/images/banner.jpg);
+    background: url(/index.html/images/banner2.jpg);
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -361,6 +361,8 @@ transform: translateY(-25px);
     background: linear-gradient(to left, #d3e4e8, #99a9cc);
     display: none;
 }
+
+/*============Beginning of Body ==============*/
 .first-btn{
     padding: 15px;
     border-radius: 5px;
@@ -437,6 +439,8 @@ and (-webkit-min-device-pixel-ratio: 1) {
         margin-left: 220px;
        
     }
+
+    /*============Beginning of Body ==============*/
     .first-btn{
         padding: 15px;
         border-radius: 5px;
