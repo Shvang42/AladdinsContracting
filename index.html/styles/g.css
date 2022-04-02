@@ -155,6 +155,245 @@ nav ul li a:hover{
     border-radius:20px;
  
 }
+/*============Beginning of Banner ==============*/
+.background-image{
+    background: url(/index.html/images/banner.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.inner-back-text{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.inner-back-text h1{
+    font-size: 90px;
+    color: white;
+    text-align: center;
+    line-height: 5rem;
+    text-transform: uppercase;
+}
+.inner-back-text h1 span{
+    color: var(--mainclr);
+    text-transform: uppercase;
+}
+.inner-back-text p{
+    color: #FFFCCE;
+    font-size: 1.5rem;
+    margin-bottom: 14px;
+    padding: 1rem;
+}
+.inner-back-btn{
+    display: flex;
+    justify-content: center;
+}
+.inner-back-btn a{
+    margin-right: 1rem;
+}
+
+.first-btn{
+    padding: 14px;
+    border-radius: 10px;
+    background: white;
+}
+
+.first-btn:hover{
+    padding: 1.5rem 4rem;
+    background: var(--mainclr);
+    border-radius: 15px;
+    color: var(--headerclr);
+    font-size: 1.5rem;
+}
+.first-btn:hover{
+    background: var(--headerclr);
+    color: white;
+    letter-spacing: 3px;
+}
+
+/*============End of Banner ==============*/
+
+/*============Beginning of Info ==============*/
+.welcome{
+    padding: 3rem 7%;
+}
+.main-welcome{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+.welcome-text h1{
+    font-size: 40px;
+    color: var(--mainclr);
+    text-align: center;
+
+}
+.welcome-text p{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.welcome-text a{
+    padding: 1.5rem 4rem;
+    background: var(--mainclr);
+    color: var(--headerclr);
+    font-size: 1.5rem;
+    border-radius: 15px;
+}
+.welcome-text a:hover{
+    background: var(--headerclr);
+    color: white;
+}
+
+/*============End of Info ==============*/
+
+/* Services Tab*/
+.chose-us{
+    padding: 5rem 7%;
+    background-color: rgb(218, 98, 98);
+}
+
+/* End of Services Tab*/
+
+@media only screen and (max-width:600px)
+{
+    .sign{
+        display: none;
+    }
+
+    body{
+        margin:1.5em;
+        font-size: 1px;
+    }
+ 
+    .img{
+       position:absolute;
+       position:0;
+       display:none;
+       margin-top:600px;
+    }
+ 
+    .links {
+        color: black;
+        text-decoration: none;
+        font-size: 10px;
+        display: block;
+        background-color:black;
+      }
+
+      nav ul{
+        width: 100%;
+        background: black;
+        position: absolute;
+        top:75px;
+        right:0;
+        z-index:2;
+    }
+  
+    nav ul li{
+        display: block;
+    }
+
+    nav ul li a{
+        color:white;
+        font-size: 15px;
+       }
+       
+    .menu-icon{
+        display: block;
+        margin-left:30px ;
+    }
+
+   
+ .navbar{
+     width: 100%;
+     display: flex;
+     background:#FFFCCE;
+     border: solid;
+ }
+
+ label.logo{
+     color:black;
+     font-size: 18px;
+     line-height:80px;
+     font-weight:bold;
+     display: flex;
+     margin-left:60px;
+
+ }
+ 
+ h1{
+     font-size: 40px;
+     line-height: 100px;
+ }
+ 
+ .content{
+     margin-top:10px;
+     padding-left: 10%;
+     padding-right:15%;
+     font-size: 23px;
+ }
+ .afc{
+     display:flex;
+     margin-top: 80px;
+     height:45%;
+     width:100%;
+     margin-left: 110px;
+    
+ }
+
+ nav{
+    background: linear-gradient(to left, #d3e4e8, #99a9cc);
+}
+
+.navbar2{
+    background: linear-gradient(to left, #d3e4e8, #99a9cc);
+    display: none;
+}
+.first-btn{
+    padding: 15px;
+    border-radius: 5px;
+    background: white;
+    font-size: 20px;
+}
+
+.inner-back-text h1{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    line-height: 5rem;
+    text-transform: uppercase;
+}
+.inner-back-text h1 span{
+    color: var(--mainclr);
+    text-transform: uppercase;
+}
+.inner-back-text p{
+    color: #FFFCCE;
+    font-size: 1.0rem;
+    margin-bottom: 14px;
+    padding: 1rem;
+}
+
+.img-gallery{
+    background: white;
+    border-radius:4px;
+    padding: 20px;
+ 
+}
+
+}
+
 
 @media only screen and (max-width:600px)
 {
@@ -256,7 +495,30 @@ nav{
     background: linear-gradient(to left, #d3e4e8, #99a9cc);
     display: none;
 }
+.first-btn{
+    padding: 15px;
+    border-radius: 5px;
+    background: white;
+    font-size: 20px;
+}
 
+.inner-back-text h1{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    line-height: 5rem;
+    text-transform: uppercase;
+}
+.inner-back-text h1 span{
+    color: var(--mainclr);
+    text-transform: uppercase;
+}
+.inner-back-text p{
+    color: #FFFCCE;
+    font-size: 1.0rem;
+    margin-bottom: 14px;
+    padding: 1rem;
+}
 
 }
 
@@ -307,5 +569,12 @@ and (-webkit-min-device-pixel-ratio: 1) {
         width:90%;
         margin-left: 220px;
        
+    }
+
+    .first-btn{
+        padding: 15px;
+        border-radius: 5px;
+        background: white;
+        font-size: 20px;
     }
 }
