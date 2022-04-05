@@ -9,3 +9,18 @@ menuBtn.addEventListener('click', () => {
     menuOpen = false;
   }
 });
+
+
+
+//Menu DropDown
+function mFunction(){
+  var x=document.getElementById("menuList");
+
+  if(x.style.display==="block")
+  {
+      x.style.display="none";
+  }
+  else{
+      x.style.display="block";
+  }
+}
