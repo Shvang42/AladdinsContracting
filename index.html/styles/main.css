@@ -89,6 +89,10 @@ nav ul li a:hover{
 
 }
 
+.menu-btn{
+    display: none;
+}
+
 /*============Beginning of Banner ==============*/
 .background-image{
     background-image: url('../back/banner.jpg');
@@ -249,37 +253,65 @@ label.logo{
     line-height:80px;
     font-weight:bold;
     display: flex;
-    margin-left: 60px;
+    margin-left: 59px;
 }
 
+/*hamburger Menu*/
+.menu-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 40px;
+    cursor: pointer;
+    margin-left: 31px;
+    transition: all .5s ease-in-out;
+    /* border: 3px solid #fff; */
+  }
+  .menu-btn__burger {
+    width: 30px;
+    height: 6px;
+    background: rgb(0, 0, 0);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    transition: all .5s ease-in-out;
+  }
+  .menu-btn__burger::before,
+  .menu-btn__burger::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 6px;
+    background: rgb(0, 0, 0);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    transition: all .5s ease-in-out;
+  }
+  .menu-btn__burger::before {
+    transform: translateY(-16px);
+  }
+  .menu-btn__burger::after {
+    transform: translateY(16px);
+  }
+  /* ANIMATION */
+  .menu-btn.open .menu-btn__burger {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+  }
+  .menu-btn.open .menu-btn__burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+  .menu-btn.open .menu-btn__burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+  }
 
-
+/* End of hamburger Menu*/
 h1{
     font-size: 40px;
     line-height: 100px;
 }
-
-.content{
-    margin-top:10px;
-    padding-left: 10%;
-    padding-right:15%;
-    font-size: 23px;
-}
-.afc{
-    display:flex;
-    margin-top: 80px;
-    height:45%;
-    width:100%;
-    margin-left: 110px;
-   
-}
-
-
-.menu-icon{
-    display: block;
-    margin-left: 30px;
-}
-
 
 nav{
     background: linear-gradient(to left, #d3e4e8, #99a9cc);
@@ -289,6 +321,8 @@ nav{
     background: linear-gradient(to left, #d3e4e8, #99a9cc);
     display: none;
 }
+
+
 
 /*============Beginning of Body ==============*/
 .first-btn{

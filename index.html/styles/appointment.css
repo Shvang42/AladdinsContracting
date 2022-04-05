@@ -142,6 +142,12 @@ form button{
     margin-right:133px
 
 }
+
+.menu-btn{
+    display: none;
+}
+
+
 /*============Beginning of Banner ==============*/
 .background-image{
     background-image: url('../back/banner.jpg');
@@ -308,16 +314,62 @@ form button{
      line-height:80px;
      font-weight:bold;
      display: flex;
-     margin-left:60px;
+     margin-left:59px;
  }
 
- .content{
-    margin-top:70px;
-    margin-left: 30px;
-    padding-left: 10%;
-    padding-right:15%;
-    font-size: 23px;
-}
+/*hamburger Menu*/
+.menu-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 40px;
+    cursor: pointer;
+    margin-left: 31px;
+    transition: all .5s ease-in-out;
+
+  }
+  .menu-btn__burger {
+    width: 30px;
+    height: 6px;
+    background: rgb(0, 0, 0);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    transition: all .5s ease-in-out;
+  }
+  .menu-btn__burger::before,
+  .menu-btn__burger::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 6px;
+    background: rgb(0, 0, 0);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    transition: all .5s ease-in-out;
+  }
+  .menu-btn__burger::before {
+    transform: translateY(-16px);
+  }
+  .menu-btn__burger::after {
+    transform: translateY(16px);
+  }
+  /* ANIMATION */
+  .menu-btn.open .menu-btn__burger {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+  }
+  .menu-btn.open .menu-btn__burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+  .menu-btn.open .menu-btn__burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+  }
+
+/* End of hamburger Menu*/
+
  h1{
      font-size: 40px;
      line-height: 100px;
@@ -365,6 +417,13 @@ form button{
     padding: 1rem;
 }
 
+.content{
+    margin-top:70px;
+    margin-left: 30px;
+    padding-left: 10%;
+    padding-right:15%;
+    font-size: 23px;
+}
 
 }
 
@@ -402,21 +461,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
         display: flex;
         margin-left: 140px;
     }
-    .content{
-        margin-top:70px;
-        margin-left: 120px;
-        padding-left: 10%;
-        padding-right:15%;
-        font-size: 23px;
-    }
-    .afc{
-        display:flex;
-        margin-top: 80px;
-        height:10%;
-        width:90%;
-        margin-left: 220px;
-       
-    }
+    
 
     /*============Beginning of Body ==============*/
     .first-btn{
@@ -424,6 +469,13 @@ and (-webkit-min-device-pixel-ratio: 1) {
         border-radius: 5px;
         background: white;
         font-size: 20px;
+    }
+    .content{
+        margin-top:70px;
+        margin-left: 120px;
+        padding-left: 10%;
+        padding-right:15%;
+        font-size: 23px;
     }
 }
 
