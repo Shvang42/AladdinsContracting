@@ -243,7 +243,7 @@ nav ul li a:hover{
     background-color: white;
     padding-bottom: 350px;
     margin: 100px;
-
+    border-radius: 5px;
 }
 .chose-icon{
     width: 100px;
