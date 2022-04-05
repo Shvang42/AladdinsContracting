@@ -144,10 +144,7 @@ nav ul li a:hover{
     margin-right:133px
 
 }
-.About{
-    text-align: center;
-    font-size: 30px;
-}
+
 
 .img-gallery{
     background: white;
@@ -468,14 +465,9 @@ h1{
     padding-right:15%;
     font-size: 23px;
 }
-.afc{
-    display:flex;
-    margin-top: 80px;
-    height:45%;
-    width:100%;
-    margin-left: 110px;
-   
-}
+
+
+
 
 .menu-icon{
     display: block;

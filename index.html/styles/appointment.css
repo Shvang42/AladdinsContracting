@@ -92,7 +92,9 @@ nav ul li a:hover{
     padding-left: 33%;
     padding-right:15%;
     font-size: 25px;
+    display: flex;
 }
+
 
 form{
     background:#fff;
@@ -308,27 +310,20 @@ form button{
      display: flex;
      margin-left:60px;
  }
- 
+
+ .content{
+    margin-top:70px;
+    margin-left: 30px;
+    padding-left: 10%;
+    padding-right:15%;
+    font-size: 23px;
+}
  h1{
      font-size: 40px;
      line-height: 100px;
  }
  
- .content{
-     margin-top:10px;
-     padding-left: 10%;
-     padding-right:15%;
-     font-size: 23px;
-     margin-left: 20px;
- }
- .afc{
-     display:flex;
-     margin-top: 80px;
-     height:45%;
-     width:100%;
-     margin-left: 110px;
-    
- }
+ 
  
  .menu-icon{
      display: block;
@@ -409,6 +404,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
     }
     .content{
         margin-top:70px;
+        margin-left: 120px;
         padding-left: 10%;
         padding-right:15%;
         font-size: 23px;
