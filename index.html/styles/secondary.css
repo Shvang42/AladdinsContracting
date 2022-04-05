@@ -99,7 +99,7 @@ nav ul li a:hover{
     width:45%;
     height:45%;
     margin-left: auto;
-    margin-right:133px
+    margin-right:165px
 
 }
 .menu-btn{
@@ -236,9 +236,14 @@ nav ul li a:hover{
     gap: 10px;
     flex-wrap: wrap;
     text-align: center;
+
 }
 .inner-chose{
     flex: 1 1 200px;
+    background-color: white;
+    padding-bottom: 350px;
+    margin: 100px;
+
 }
 .chose-icon{
     width: 100px;
@@ -442,6 +447,14 @@ transform: translateY(-25px);
     padding: 1rem;
 }
 
+.inner-chose{
+    flex: 1 1 200px;
+    background-color: white;
+    padding-bottom: 350px;
+    margin: 20px;
+
+}
+
 }
 
 
@@ -514,4 +527,13 @@ and (-webkit-min-device-pixel-ratio: 1) {
             .sign{
                 margin-right: 140px;
             }
+}
+
+@media screen and (min-width: 2000px) 
+{
+
+
+    .sign{
+        margin-right: 190px;
+    }
 }

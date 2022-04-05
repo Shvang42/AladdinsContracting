@@ -139,7 +139,7 @@ form button{
     width:45%;
     height:45%;
     margin-left: auto;
-    margin-right:133px
+    margin-right:165px
 
 }
 
@@ -493,4 +493,17 @@ and (-webkit-min-device-pixel-ratio: 1) {
             .sign{
                 margin-right: 140px;
             }
+}
+
+@media screen and (min-width: 2000px) 
+{
+
+
+    .sign{
+        margin-right: 194px;
+    }
+
+    .content{
+        margin-left: 85px;
+    }
 }
