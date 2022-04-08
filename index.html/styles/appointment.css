@@ -258,6 +258,54 @@ form button{
 
 
 /* End of Services Tab*/
+
+/*============Beginning of Footer ==============*/
+
+
+.footer{
+    margin-top: 150px;
+    width:100%;
+    padding:100px 15%;
+    background: #333;
+    color:#efefef;
+    display:flex;
+}
+
+.footer div{
+    text-align: center;
+}
+
+.footer div h3{
+    font-weight:300px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+
+.col-1{
+    margin-left: 430px;
+}
+
+.col-3{
+margin-left: 300px;
+}
+
+.col-1 a{
+    display: block;
+    text-decoration: none;
+    color:#efefef;
+    margin-bottom: 10px;
+}
+
+.col-3 a{
+    display: block;
+    text-decoration: none;
+    color:#efefef;
+    margin-bottom: 10px;
+}
+
+ 
+/*============End of Footer ==============*/
 @media only screen and (max-width:600px)
 {
     .sign{
@@ -425,6 +473,9 @@ form button{
     font-size: 23px;
 }
 
+.footer{
+    display: none;
+}
 }
 
 
@@ -477,6 +528,10 @@ and (-webkit-min-device-pixel-ratio: 1) {
         padding-right:15%;
         font-size: 23px;
     }
+
+    .footer{
+        display: none;
+    }
 }
 
 @media (min--moz-device-pixel-ratio: 1.5),
@@ -493,6 +548,10 @@ and (-webkit-min-device-pixel-ratio: 1) {
             .sign{
                 margin-right: 140px;
             }
+        
+        .footer{
+            display:none;
+        }
 }
 
 @media screen and (min-width: 2000px) 
@@ -505,5 +564,9 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
     .content{
         margin-left: 85px;
+    }
+
+    .col-1{
+        margin-left: 650px;
     }
 }
