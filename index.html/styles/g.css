@@ -267,7 +267,6 @@ nav ul li a:hover{
 
 
 .footer{
-    margin-top: 150px;
     width:100%;
     padding:100px 15%;
     background: #333;
@@ -677,9 +676,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
             .sign{
                 margin-right: 140px;
             }
-            .footer{
-                display: none;
-            }
+           
 }
 
 @media screen and (min-width: 2000px) 
