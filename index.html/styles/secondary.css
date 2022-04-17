@@ -586,6 +586,18 @@ and (-webkit-min-device-pixel-ratio: 1) {
             
 }
 
+/*Medium */
+@media (min-width: 48em) {  
+
+    .col-1{
+        margin-left: 240px;
+    }
+    .sign{
+        margin-left: 540px;
+    }
+}
+  
+/*Large */
 @media screen and (min-width: 2000px) 
 {
 
