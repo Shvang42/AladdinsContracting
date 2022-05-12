@@ -379,12 +379,12 @@ margin-left: 300px;
  }
 
  label.logo{
-     color:black;
-     font-size: 18px;
-     line-height:80px;
-     font-weight:bold;
-     display: flex;
-     margin-left:59px;
+    color:black;
+    font-size: 13px;
+    line-height:80px;
+    font-weight:bold;
+    display: flex;
+    margin-left: 55px;
 
  }
  /*hamburger Menu*/
@@ -396,7 +396,7 @@ margin-left: 300px;
     width: 30px;
     height: 40px;
     cursor: pointer;
-    margin-left: 31px;
+    margin-left: 72px;
     transition: all .5s ease-in-out;
     /* border: 3px solid #fff; */
   }
@@ -586,21 +586,12 @@ and (-webkit-min-device-pixel-ratio: 1) {
             
 }
 
-/*Medium */
-@media (min-width: 48em) {  
-    .sign{
-        margin-left: 618px;
-    }
-    .col-1{
-        margin-left: 240px;
-    }
-}
-  
+
 /*Large */
 @media screen and (min-width: 2000px) 
 {
     .sign{
-        margin-right: 194px;
+        margin-left: 1144px;
     }
     .col-1{
         margin-left: 650px;
