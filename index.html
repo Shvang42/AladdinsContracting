@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>AFC Carpentry</title>
+  <meta name="title" content="AFC">
+
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./css/style.css">
+
+  
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+        <a href="#" class="logo">
+          <img src="./images/logo.png" width="78" height="28" alt="sign">
+        </a>
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <div class="navbar-top">
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#heroID" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#aboutID" class="navbar-link">About</a>
+          </li>
+
+          <li>
+            <a href="./contact.html" class="navbar-link">Contact</a>
+          </li>
+
+        </ul>
+
+        <div class="wrapper">
+          <a href="mailto:info@email.com" class="contact-link"></a>
+
+          <a href="tel:001234567890" class="contact-link">856-345-8168</a>
+        </div>
+
+       
+
+      </nav>
+
+      
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero has-bg-image" id= "heroID"aria-label="home"
+        style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title">Ab's Finish Carpentry</h1>
+
+            <p class="hero-text"> 
+              We're all about amazing, lasting craftsmanship and keeping you happy. Let's transform your home 
+              with details that speak volumes. Ready to make your place incredible? Let's dive in.
+            </p>
+
+            <div class="btn-wrapper">
+
+              <a href="#serviceID" class="btn btn-primary">Explore Now</a>
+
+              <a href="#" class="btn btn-primary ,">Contact Us</a>
+
+            </div>
+
+          </div>
+
+          <div class="hero-slider" data-slider>
+
+            <div class="slider-inner">
+              <ul class="slider-container" data-slider-container>
+
+                <li class="slider-item">
+
+                  <figure class="img-holder" style="--width: 575; --height: 550;">
+                    <img src="./images/image1.jpg" width="575" height="550" alt="" class="img-cover">
+                  </figure>
+
+                </li>
+
+                <li class="slider-item">
+
+                  <div class="hero-card">
+                    <figure class="img-holder" style="--width: 575; --height: 550;">
+                      <img src="./images/image2.jpg" width="575" height="550" alt="hero banner"
+                        class="img-cover">
+                    </figure>
+
+                  </div>
+
+                </li>
+
+                <li class="slider-item">
+
+                  <figure class="img-holder" style="--width: 575; --height: 550;">
+                    <img src="./images/image3.jpg" width="575" height="550" alt="" class="img-cover">
+                  </figure>
+
+                </li>
+
+              </ul>
+            </div>
+            <button class="slider-btn prev" aria-label="slide to previous" data-slider-prev>
+              <ion-icon name="arrow-back"></ion-icon>
+            </button>
+
+            <button class="slider-btn next" aria-label="slide to next" data-slider-next>
+              <ion-icon name="arrow-forward"></ion-icon>
+            </button>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service" id = "serviceID"aria-labelledby="service-label">
+        <div class="container">
+
+          <p class="section-subtitle" id="service-label">Our Services</p>
+
+          <h2 class="h2 section-title">
+            A list of the services that we provide
+          </h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="hammer" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">Hardwood Flooring Installation</h3>
+
+                <p class="card-text">
+                  High-quality hardwood floor installation that provides a timeless 
+                  and durable foundation for your home's aesthetic.
+                </p>
+
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="home" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">Door and Window Framing</h3>
+
+                <p class="card-text">
+                  Expert framing for doors and windows, ensuring a perfect fit and 
+                  finish that complements your home's design.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="brush" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">Interior and Exterior Painting</h3>
+
+                <p class="card-text">
+                  Professional painting services that transform your space with color, both inside and out. 
+                  We use high-quality paints for a beautiful finish.
+                </p>
+
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="build" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">Drywall Installation and Repair</h3>
+
+                <p class="card-text">
+                  Expert drywall services for smooth walls and ceilings, 
+                  including installation, patching, and finishing for a flawless look.
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="about" id= "aboutID" aria-labelledby="about-label">
+        <div class="container">
+
+          <figure class="about-banner">
+            <img src="./images/workers.png" width="700" height="280" loading="lazy" alt="about banner"
+              class="w-100">
+          </figure>
+
+          <div class="about-content">
+
+            <p class="section-subtitle" id="about-label">Why Choose Us?</p>
+
+            <h2 class="h2 section-title">
+              We provide solutions that simplify our clients' lives.
+            </h2>
+
+            <ul>
+              <li class="about-item">
+                <div class="accordion-card expanded" data-accordion>
+
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+
+                      <spna class="span h5">The process</spna>
+                    </button>
+                  </h3>
+
+                  <p class="accordion-content">
+                    Choose us because we're all about making your space stand out with awesome woodwork. 
+                    We focus on quality, pay attention to the little things, and always put you first.
+                  </p>
+            
+                  
+
+                </div>
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container grid-list">
+
+      <div class="footer-brand">
+
+        <a href="#" class="logo">
+          <img src="./images/logo.png" width="74" height="24" alt="logo">
+        </a>
+
+        <p class="footer-text">
+           All rights reserved.
+        </p>
+
+      </div>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Get in Touch</p>
+        </li>
+
+        <li>
+          <address class="footer-text">
+            31 Peters Ln, Blackwood NJ 08021
+          </address>
+        </li>
+
+        <li>
+          <a href="tel:001234567890" class="footer-link">856-345-8168</a>
+        </li>
+
+      </ul>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Learn More</p>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Our Story</a>
+        </li>
+
+
+      </ul>
+      
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - js link
+  -->
+  <script src="./js/script.js"></script>
+
+  <!-- 
+    - ionicon
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
