@@ -764,6 +764,8 @@
     }
 
 
+
+
   }
   
   
@@ -970,6 +972,10 @@
     .stats-card { grid-template-columns: repeat(4, 1fr); }
   
   
+
+
+
+
   
   
     /**
@@ -1073,3 +1079,41 @@
     }
   
   }
+
+
+ 
+@media (max-width: 768px) {
+  .about-banner {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  
+  
+  .about .container {
+    margin-right: 0; 
+    display: block; 
+  }
+
+  .about-content .form-group label {
+    margin-right: 0; 
+  }
+
+  
+  .about-content .form-group button[type="submit"] {
+    background-color: #000; 
+    color: #fff; 
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+    margin-left: 55px;
+  }
+
+  
+  .section {
+    padding-block: 30px; /* Reduce padding for small screens */
+  }
+
+}
