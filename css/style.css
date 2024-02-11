@@ -1083,12 +1083,31 @@
 
  
 @media (max-width: 768px) {
+
+
+
+
+
+/**HEADER*/
+
+.header {
+  height: 14%;
+}
+
+
+/**HERO*/
+
+
+.hero{
+  margin-top: 20px;
+}
+
+  /**ABOUT*/
   .about-banner {
     margin-right: 0;
     margin-bottom: 20px;
   }
 
-  
   
   .about .container {
     margin-right: 0; 
@@ -1096,7 +1115,7 @@
   }
 
   .about-content .form-group label {
-    margin-right: 0; 
+    margin-left: 0px; 
   }
 
   
@@ -1108,7 +1127,8 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: background-color 0.3s ease;
-    margin-left: 55px;
+    margin-top: 20px;
+    margin-left: 0px;
   }
 
   
