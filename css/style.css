@@ -480,47 +480,62 @@
    #CONTACT
   \*-----------------------------------*/
 
-  .contact-section {
-    padding: 150px;
-    background-color: var(--white);
-  }
-  
-  .contact-section form {
-    border: 2px solid black; /* Adds a black border around the form */
-    padding: 20px; 
-    border-radius: 10px; 
+  .about-content h2 {
+    color: #000; 
+    font-size: 4rem; 
+    margin-bottom: 1rem; 
+    text-align: center; 
+    }
+
+  .about-banner{
+    margin-right: 200px;
+    }
+
+
+    .about-content form {
+    background-color: #333; /* Dark grey background */
+    padding: 30px;
+    border-radius: 8px;
+    height: 430px;
   }
 
-  .form-group {
-    margin-bottom: 15px;
-    color: var(--black-coral);
+
+  .about-content .form-group label {
+    color: #fff; /* White text for labels */
+    margin-bottom: 0.5rem;
+    margin-right: 440px;
   }
   
-  .form-group label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  .form-group input[type="text"],
-  .form-group input[type="email"],
-  .form-group textarea {
-    width: 100%;
+  .about-content .form-group input[type="text"],
+  .about-content .form-group input[type="email"],
+  .about-content .form-group textarea {
+    background-color: #f1f1f1; /* Light grey background for inputs */
+    color: #333; /* Dark grey text */
+    border: 1px solid #ccc; /* Light grey border */
     padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    margin-bottom: 1rem;
   }
   
-  .form-group button[type="submit"] {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
+  .about-content .form-group input[type="text"]:focus,
+  .about-content .form-group input[type="email"]:focus,
+  .about-content .form-group textarea:focus {
+    border-color: #444; /* Darker grey border on focus */
+    outline: none;
+  }
+  
+  .about-content .form-group button[type="submit"] {
+    background-color: #000; /* Black background for button */
+    color: #fff; /* White text for button */
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+    margin-left: 145px;
   }
   
-  .form-group button[type="submit"]:hover {
-    background-color: #0056b3;
+  .about-content .form-group button[type="submit"]:hover {
+    background-color: #555; /* Dark grey background for button on hover */
   }
 
   /*-----------------------------------*\
@@ -583,7 +598,8 @@
   
   .about .container {
     display: grid;
-    gap: 50px;
+    gap: 40px;
+    margin-right: 300px;
   }
   
   .about .section-title { margin-block-end: 35px; }
@@ -1007,7 +1023,7 @@
     /** CONTACT
     **/
     .contact-section {
-      padding: 120px var(--section-padding); /* Utilize your custom property for consistent spacing */
+      padding: 120px var(--section-padding); 
       max-width: 1140px; /* Match the container width for consistency */
     }
   
@@ -1053,7 +1069,7 @@
 
     /**CONTACT*/
     .contact-section {
-      max-width: 1320px; /* Match the container width for the largest screens */
+      max-width: 1320px; 
     }
   
   }

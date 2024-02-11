@@ -24,7 +24,7 @@
     - custom css link
   -->
   <link rel="stylesheet" href="./css/style.css">
-
+  
 </head>
 
 <body>
@@ -90,10 +90,144 @@
 
 
   <main>
+    <article>
 
-        
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero has-bg-image" id= "heroID"aria-label="home"
+        style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title">Ab's Finish Carpentry</h1>
+
+            <p class="hero-text"> 
+              We're all about amazing, lasting craftsmanship and keeping you happy. Let's transform your home 
+              with details that speak volumes. Ready to make your place incredible? Let's dive in.
+            </p>
+
+            <div class="btn-wrapper">
+
+              <a href="./index.html#serviceID" class="btn btn-primary">Explore Now</a>
+
+              <a href="./contact.html#aboutID" class="btn btn-primary ,">Contact Us</a>
+
+            </div>
+
+          </div>
+
+          <div class="hero-slider" data-slider>
+
+            <div class="slider-inner">
+              <ul class="slider-container" data-slider-container>
+
+                <li class="slider-item">
+
+                  <figure class="img-holder" style="--width: 575; --height: 550;">
+                    <img src="./images/image1.jpg" width="575" height="550" alt="" class="img-cover">
+                  </figure>
+
+                </li>
+
+                <li class="slider-item">
+
+                  <div class="hero-card">
+                    <figure class="img-holder" style="--width: 575; --height: 550;">
+                      <img src="./images/image2.jpg" width="575" height="550" alt="hero banner"
+                        class="img-cover">
+                    </figure>
+
+                  </div>
+
+                </li>
+
+                <li class="slider-item">
+
+                  <figure class="img-holder" style="--width: 575; --height: 550;">
+                    <img src="./images/image3.jpg" width="575" height="550" alt="" class="img-cover">
+                  </figure>
+
+                </li>
+
+              </ul>
+            </div>
+            <button class="slider-btn prev" aria-label="slide to previous" data-slider-prev>
+              <ion-icon name="arrow-back"></ion-icon>
+            </button>
+
+            <button class="slider-btn next" aria-label="slide to next" data-slider-next>
+              <ion-icon name="arrow-forward"></ion-icon>
+            </button>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+    </article>
+    
+
 
   </main>
+
+
+
+
+ <!-- 
+        - #Contact
+      -->
+
+      <section class="section service">
+        
+ 
+          <section class="about" id= "aboutID" aria-labelledby="about-label">
+            <div class="container">
+
+              <figure class="about-banner">
+                <img src="./images/building.png" width="600" height="280" loading="lazy" alt="about banner"
+                  class="w-100">
+              </figure>
+    
+              <div class="about-content">
+
+                 <!-- Contact Title -->
+                    <h2>Book a Free Consultation</h2>
+
+    
+                <form data-netlify="true" method="POST">
+                    <div class="form-group">
+                      <label for="about-name">Name:</label>
+                      <input type="text" id="about-name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="about-email">Email:</label>
+                      <input type="email" id="about-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="about-message">Issue:</label>
+                      <input type="text" id="about-message" name="reason" required>
+                    </div>
+                    <div class="form-group">
+                      <button type="submit" class="btn">Send Message</button>
+                    </div>
+                  </form>
+    
+                
+    
+               
+
+
+              </div>
+    
+            </div>
+          </section>
+
+      </section>
 
 
 
