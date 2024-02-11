@@ -183,50 +183,35 @@
       -->
 
       <section class="section service">
-        
- 
-          <section class="about" id= "aboutID" aria-labelledby="about-label">
-            <div class="container">
-
-              <figure class="about-banner">
-                <img src="./images/building.png" width="600" height="280" loading="lazy" alt="about banner"
-                  class="w-100">
-              </figure>
-    
-              <div class="about-content">
-
-                 <!-- Contact Title -->
-                    <h2>Book a Free Consultation</h2>
-
-    
-                <form data-netlify="true" method="POST">
-                    <div class="form-group">
-                      <label for="about-name">Name:</label>
-                      <input type="text" id="about-name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                      <label for="about-email">Email:</label>
-                      <input type="email" id="about-email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                      <label for="about-message">Issue:</label>
-                      <input type="text" id="about-message" name="reason" required>
-                    </div>
-                    <div class="form-group">
-                      <button type="submit" class="btn">Send Message</button>
-                    </div>
-                  </form>
-    
-                
-    
-               
-
-
-              </div>
-    
+        <section class="about" id="aboutID" aria-labelledby="about-label">
+          <div class="container">
+            <figure class="about-banner">
+              <img src="./images/building.png" width="600" height="280" loading="lazy" alt="about banner" class="w-100">
+            </figure>
+            <div class="about-content">
+              <!-- Contact Title -->
+              <h2>Book a Free Consultation</h2>
+              <form name="contact-form" data-netlify="true" method="POST">
+                <input type="hidden" name="form-name" value="contact-form" />
+                <div class="form-group">
+                  <label for="about-name">Name:</label>
+                  <input type="text" id="about-name" name="name" required>
+                </div>
+                <div class="form-group">
+                  <label for="about-email">Email:</label>
+                  <input type="email" id="about-email" name="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="about-message">Issue:</label>
+                  <input type="text" id="about-message" name="reason" required>
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="btn">Send Message</button>
+                </div>
+              </form>
             </div>
-          </section>
-
+          </div>
+        </section>
       </section>
 
 
