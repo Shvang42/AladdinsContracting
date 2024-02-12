@@ -1,0 +1,19 @@
+(function(){
+  emailjs.init("PluP8KyrxNmu7p3tw"); 
+})();
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  document.getElementById("contacts-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    emailjs.sendForm('service_8vli1vf', 'template_kvs5e5q', this)
+      .then(function() {
+        console.log('SUCCESS!');
+        alert('Sent!');
+      }, function(error) {
+        console.log('FAILED...', error);
+        alert('Failed to send the message, please try again later.');
+      });
+  });
+});

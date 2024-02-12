@@ -191,7 +191,7 @@
             <div class="about-content">
               <!-- Contact Title -->
               <h2>Book a Free Consultation</h2>
-              <form name="contact-form" netlify data-netlify="true" method="POST">
+              <form name="contact-form" id="contacts-form" method="POST">
                 <input type="hidden" name="form-name" value="contact-form" />
                 <div class="form-group">
                   <label for="about-name">Name:</label>
@@ -279,12 +279,14 @@
     - js link
   -->
   <script src="./js/script.js"></script>
+  <script src="./js/email.js"></script>
 
   <!-- 
     - ionicon
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
 
 </body>
 
