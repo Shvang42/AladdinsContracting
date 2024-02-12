@@ -1,7 +1,9 @@
-(function(){
-  emailjs.init("PluP8KyrxNmu7p3tw"); 
-})();
-
+/*
+*
+*email.js
+*
+*Takes form elements and sents to email
+**/ 
 
 document.addEventListener("DOMContentLoaded", function() {
   document.getElementById("contacts-form").addEventListener("submit", function(event) {
