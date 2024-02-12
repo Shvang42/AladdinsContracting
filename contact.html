@@ -24,7 +24,14 @@
     - custom css link
   -->
   <link rel="stylesheet" href="./css/style.css">
-  
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+  (function(){
+    emailjs.init("PluP8KyrxNmu7p3tw"); 
+  })();
+  </script>
+
+
 </head>
 
 <body>
@@ -191,7 +198,7 @@
             <div class="about-content">
               <!-- Contact Title -->
               <h2>Book a Free Consultation</h2>
-              <form name="contact-form" data-netlify="true" method="POST">
+              <form name="contact-form" id="contacts-form" method="POST">
                 <input type="hidden" name="form-name" value="contact-form" />
                 <div class="form-group">
                   <label for="about-name">Name:</label>
@@ -206,7 +213,7 @@
                   <input type="text" id="about-message" name="reason" required>
                 </div>
                 <div class="form-group">
-                  <button type="submit" class="btn">Send Message</button>
+                  <button type="submit" onclick="s" class="btn">Send Message</button>
                 </div>
               </form>
             </div>
@@ -279,6 +286,7 @@
     - js link
   -->
   <script src="./js/script.js"></script>
+  <script src="./js/email.js"></script>
 
   <!-- 
     - ionicon

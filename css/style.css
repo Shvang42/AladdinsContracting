@@ -764,6 +764,8 @@
     }
 
 
+
+
   }
   
   
@@ -970,6 +972,10 @@
     .stats-card { grid-template-columns: repeat(4, 1fr); }
   
   
+
+
+
+
   
   
     /**
@@ -1054,7 +1060,7 @@
   
   
   /**
-   * responsive for large than 1400px screen
+   * responsive for large than 1400px 
    */
   
   @media (min-width: 1400px) {
@@ -1073,3 +1079,61 @@
     }
   
   }
+
+
+ 
+@media (max-width: 768px) {
+
+
+
+
+
+/**HEADER*/
+
+.header {
+  height: 14%;
+}
+
+
+/**HERO*/
+
+
+.hero{
+  margin-top: 20px;
+}
+
+  /**ABOUT*/
+  .about-banner {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  
+  .about .container {
+    margin-right: 0; 
+    display: block; 
+  }
+
+  .about-content .form-group label {
+    margin-left: 0px; 
+  }
+
+  
+  .about-content .form-group button[type="submit"] {
+    background-color: #000; 
+    color: #fff; 
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+
+  
+  .section {
+    padding-block: 30px; /* Reduce padding for small screens */
+  }
+
+}

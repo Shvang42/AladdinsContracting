@@ -1,3 +1,12 @@
+/**
+ * 
+ * script.js
+ * 
+ * navbar + hamburger logic
+ * 
+ * ***/
+
+
 'use strict';
 
 /**
