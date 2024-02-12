@@ -24,7 +24,14 @@
     - custom css link
   -->
   <link rel="stylesheet" href="./css/style.css">
-  
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+  (function(){
+    emailjs.init("PluP8KyrxNmu7p3tw"); 
+  })();
+  </script>
+
+
 </head>
 
 <body>
@@ -51,18 +58,17 @@
         <ul class="navbar-list">
 
           <li>
-            <a href="#heroID" class="navbar-link">Home</a>
+            <a href="./index.html#heroID" class="navbar-link">Home</a>
           </li>
 
           <li>
-            <a href="#aboutID" class="navbar-link">About</a>
+            <a href="./index.html#aboutID" class="navbar-link">About</a>
           </li>
 
           <li>
-            <a href="./contact.html" class="navbar-link">Contact</a>
+            <a href="./contact.html#aboutID" class="navbar-link">Contact</a>
           </li>
 
-          
           <li>
             <a href="./testimonials.html" class="navbar-link">Reviews</a>
           </li>
@@ -116,9 +122,9 @@
 
             <div class="btn-wrapper">
 
-              <a href="#serviceID" class="btn btn-primary">Explore Now</a>
+              <a href="./index.html#serviceID" class="btn btn-primary">Explore Now</a>
 
-              <a href="./contact.html#aboutID" class="btn btn-primary">Contact Us</a>
+              <a href="./contact.html#aboutID" class="btn btn-primary ,">Contact Us</a>
 
             </div>
 
@@ -174,156 +180,11 @@
 
 
 
-
-
-      <!-- 
-        - #SERVICE
-      -->
-
-      <section class="section service" id = "serviceID"aria-labelledby="service-label">
-        <div class="container">
-
-          <p class="section-subtitle" id="service-label">Our Services</p>
-
-          <h2 class="h2 section-title">
-            A list of the services that we provide
-          </h2>
-
-          <ul class="grid-list">
-
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <ion-icon name="hammer" aria-hidden="true"></ion-icon>
-                </div>
-
-                <h3 class="h4 card-title">Hardwood Flooring Installation</h3>
-
-                <p class="card-text">
-                  High-quality hardwood floor installation that provides a timeless 
-                  and durable foundation for your home's aesthetic.
-                </p>
-
-
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <ion-icon name="home" aria-hidden="true"></ion-icon>
-                </div>
-
-                <h3 class="h4 card-title">Door and Window Framing</h3>
-
-                <p class="card-text">
-                  Expert framing for doors and windows, ensuring a perfect fit and 
-                  finish that complements your home's design.
-                </p>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <ion-icon name="brush" aria-hidden="true"></ion-icon>
-                </div>
-
-                <h3 class="h4 card-title">Interior and Exterior Painting</h3>
-
-                <p class="card-text">
-                  Professional painting services that transform your space with color, both inside and out. 
-                  We use high-quality paints for a beautiful finish.
-                </p>
-
-
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <ion-icon name="build" aria-hidden="true"></ion-icon>
-                </div>
-
-                <h3 class="h4 card-title">Drywall Installation and Repair</h3>
-
-                <p class="card-text">
-                  Expert drywall services for smooth walls and ceilings, 
-                  including installation, patching, and finishing for a flawless look.
-                </p>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #ABOUT
-      -->
-
-      <section class="about" id= "aboutID" aria-labelledby="about-label">
-        <div class="container">
-
-          <figure class="about-banner">
-            <img src="./images/workers.png" width="700" height="280" loading="lazy" alt="about banner"
-              class="w-100">
-          </figure>
-
-          <div class="about-content">
-
-            <p class="section-subtitle" id="about-label">Why Choose Us?</p>
-
-            <h2 class="h2 section-title">
-              We provide solutions that simplify our clients' lives.
-            </h2>
-
-            <ul>
-              <li class="about-item">
-                <div class="accordion-card expanded" data-accordion>
-
-                  <h3 class="card-title">
-                    <button class="accordion-btn" data-accordion-btn>
-                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
-
-                      <spna class="span h5">The process</spna>
-                    </button>
-                  </h3>
-
-                  <p class="accordion-content">
-                    Choose us because we're all about making your space stand out with awesome woodwork. 
-                    We focus on quality, pay attention to the little things, and always put you first.
-                  </p>
-            
-                  
-
-                </div>
-              </li>
-            </ul>
-
-          </div>
-
-        </div>
-      </section>
-
-
     </article>
+    
+
+
   </main>
-
-
-
 
 
   <!-- 
@@ -379,7 +240,7 @@
 
         <li>
             <a href="./index.html#heroID" class="footer-link">Home</a>
-
+        </li>
       </ul>
       
     </div>
