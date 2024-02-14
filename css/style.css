@@ -940,6 +940,10 @@
       align-items: center;
     }
   
+    
+    .about .section-title{
+      font-size: 35px;
+    }
   
   
    
@@ -1044,8 +1048,11 @@
   
   
 
+    /**ABOUT
+    **/
 
 
+  
 
   
   
@@ -1203,6 +1210,11 @@
     transition: background-color 0.3s ease;
     margin-top: 20px;
     margin-left: 0px;
+  }
+
+  
+  .about .section-title{
+    font-size: 30px;
   }
 
   
