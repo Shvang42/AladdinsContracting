@@ -474,7 +474,9 @@
   .hero .slider-btn.next { right: 20px; }
   
   
-  
+  .callbutton{
+    display: none;
+  }
 
   /*-----------------------------------*\
    #CONTACT
@@ -1181,6 +1183,13 @@
 
 .hero{
   margin-top: 150px;
+}
+
+.callbutton{
+  display: block;
+}
+.explorebtn{
+  display: none;
 }
 
   /**ABOUT*/
