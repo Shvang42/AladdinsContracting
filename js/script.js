@@ -53,24 +53,48 @@ document.querySelectorAll("[data-slider]").forEach(currentSlider => {
 
   let currentSlidePos = 0;
 
-  const moveSliderItem = () => {
-    sliderContainer.style.transform = `translateX(-${sliderContainer.children[currentSlidePos].offsetLeft}px)`;
+  const moveSliderItem = (instant = false) => {
+    if (instant) {
+      // Temporarily hide the slider for the instant move
+      sliderContainer.style.opacity = '0';
+      sliderContainer.style.transform = `translateX(-${sliderContainer.children[currentSlidePos].offsetLeft}px)`;
+  
+      // Use setTimeout to fade the slider back in
+      setTimeout(() => {
+        sliderContainer.style.transition = 'opacity 0.5s ease'; // Apply a fade transition
+        sliderContainer.style.opacity = '1'; // Fade the slider back in
+  
+        // Reset the transition to include both opacity and transform for subsequent slides
+        setTimeout(() => {
+          sliderContainer.style.transition = 'transform 0.5s ease, opacity 0.5s ease';
+        }, 500); // Ensure this matches the opacity transition time
+      }, 50); // Small delay to ensure the transform is applied instantly
+    } else {
+      // Standard sliding transition
+      sliderContainer.style.opacity = '1'; // Ensure full opacity in case it was faded out
+      sliderContainer.style.transform = `translateX(-${sliderContainer.children[currentSlidePos].offsetLeft}px)`;
+    }
   };
-
+  
   sliderNextBtn.addEventListener("click", () => {
-    currentSlidePos = currentSlidePos >= sliderContainer.childElementCount - 1 ? 0 : currentSlidePos + 1;
-    moveSliderItem();
+    if (currentSlidePos >= sliderContainer.childElementCount - 1) {
+      currentSlidePos = 0; // Reset to the first slide
+      moveSliderItem(true); // Move with a fade-in effect
+    } else {
+      currentSlidePos += 1;
+      moveSliderItem();
+    }
   });
-
+  
   sliderPrevBtn.addEventListener("click", () => {
-    currentSlidePos = currentSlidePos <= 0 ? sliderContainer.childElementCount - 1 : currentSlidePos - 1;
-    moveSliderItem();
+    if (currentSlidePos <= 0) {
+      currentSlidePos = sliderContainer.childElementCount - 1; // Move to the last slide
+      moveSliderItem(true); // Move with a fade-in effect
+    } else {
+      currentSlidePos -= 1;
+      moveSliderItem();
+    }
   });
-
-  if (sliderContainer.childElementCount <= 1) {
-    sliderNextBtn.style.display = "none";
-    sliderPrevBtn.style.display = "none";
-  }
 });
 
 /**
