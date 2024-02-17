@@ -58,8 +58,7 @@ document.querySelectorAll("[data-slider]").forEach(currentSlider => {
       // Temporarily hide the slider for the instant move
       sliderContainer.style.opacity = '0';
       sliderContainer.style.transform = `translateX(-${sliderContainer.children[currentSlidePos].offsetLeft}px)`;
-  
-      // Use setTimeout to fade the slider back in
+
       setTimeout(() => {
         sliderContainer.style.transition = 'opacity 0.5s ease'; // Apply a fade transition
         sliderContainer.style.opacity = '1'; // Fade the slider back in
@@ -67,11 +66,11 @@ document.querySelectorAll("[data-slider]").forEach(currentSlider => {
         // Reset the transition to include both opacity and transform for subsequent slides
         setTimeout(() => {
           sliderContainer.style.transition = 'transform 0.5s ease, opacity 0.5s ease';
-        }, 500); // Ensure this matches the opacity transition time
+        }, 500); 
       }, 50); // Small delay to ensure the transform is applied instantly
     } else {
       // Standard sliding transition
-      sliderContainer.style.opacity = '1'; // Ensure full opacity in case it was faded out
+      sliderContainer.style.opacity = '1'; 
       sliderContainer.style.transform = `translateX(-${sliderContainer.children[currentSlidePos].offsetLeft}px)`;
     }
   };
