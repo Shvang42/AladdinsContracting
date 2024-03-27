@@ -140,6 +140,7 @@
     line-height: 1.7;
   }
   
+
   body.nav-active { overflow: hidden; }
   
   ::-webkit-scrollbar { width: 10px; }
@@ -850,9 +851,6 @@
     #MEDIA QUERIES
   \*-----------------------------------*/
   
-  /**
-   * responsive for large than 575px screen
-   */
   
   @media (min-width: 575px) {
   
@@ -871,9 +869,6 @@
     .contact-section {
       padding: 50px; 
     }
-
-
-
 
   }
   
@@ -1207,13 +1202,10 @@
 @media (max-width: 768px) {
 
 
-
-
-
 /**HEADER*/
 
 .header {
-  height: 19%;
+  height: 25%;
 }
 
 
