@@ -318,7 +318,7 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-    z-index: 2;
+    z-index: 1001;
     visibility: hidden;
     transition: var(--transition-3);
   }
@@ -490,10 +490,6 @@
     text-align: center; 
     }
 
-  .about-banner{
-    margin-right: 100px;
-    }
-
 
     .about-content form {
     background-color: #333; /* Dark grey background */
@@ -534,7 +530,7 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: background-color 0.3s ease;
-    margin-left: 145px;
+    margin: auto;
   }
   
   .about-content .form-group button[type="submit"]:hover {
@@ -573,7 +569,10 @@
     .google-map iframe {
       border: 0;
       width: 100%;
-      height: 450px; /* Adjust height as needed */
+      height: 450px; 
+      max-width: 100%; 
+      margin: 0 auto; 
+      display: block; 
     }
 
   /*-----------------------------------*\
@@ -637,13 +636,13 @@
   .about .container {
     display: grid;
     gap: 40px;
-    margin-right: 300px;
   }
   
   .about .section-title { margin-block-end: 35px; }
   
   .about .about-banner .w-100{
     border-radius: 15px;
+    margin: auto;
   }
   .accordion-card .card-title { padding-block-end: 20px; }
   
@@ -866,6 +865,7 @@
   
   
     /**Contact**/
+    
     .contact-section {
       padding: 50px; 
     }
@@ -976,6 +976,7 @@
       align-items: center;
     }
   
+    
     
     .about .section-title{
       font-size: 35px;
@@ -1196,4 +1197,29 @@
     }
   
   }
+
+@media (min-width: 1920px) {
+      .container {
+          width: 1890px;
+      }
+  }
+
+@media (min-width: 3840px) {
+      .container {
+          width: 3810px;
+      }
+  }
+
+
+
+/*Just for Mobile Screen Contact form adjustment*/
+@media (max-width: 767px) {
+  .about .container {
+    display: block /* Disable grid and revert to block layout */
+  }
+
+  .navbar {
+    height: 1100px;
+  }
+}
 
